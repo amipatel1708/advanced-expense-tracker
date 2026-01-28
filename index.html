@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Expense Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="main-container">
+<div class="app">
+    <header>
+        <h1>Advanced Expense Tracker</h1>
+    </header>
+
+    <!-- Add Expense -->
+    <div class="card add-expense">
+        <input type="text" id="title" placeholder="Expense title">
+        <input type="number" id="amount" placeholder="₹ Amount">
+        <select id="category">
+            <option value="">Category</option>
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Bills</option>
+            <option>Other</option>
+        </select>
+        <input type="date" id="date">
+        <button id="addBtn">+ Add Expense</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="card filters">
+        <div>
+            <label>Filter by category</label>
+            <select id="filterCategory">
+                <option value="All">All</option>
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Bills</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Sort by</label>
+            <select id="sortBy">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="amountHigh">High Amount</option>
+                <option value="amountLow">Low Amount</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="card table-card">
+        <h3>Expense History</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expenseList"></tbody>
+        </table>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-grid">
+
+        <!-- Summary -->
+        <div class="card summary">
+            <h3>Summary</h3>
+            <div class="summary-item">
+                <span>Total :</span>
+                <strong>₹<span id="totalExpense">0</span></strong>
+            </div>
+            <div class="summary-item">
+                <span>Today :</span>
+                <strong>₹<span id="todayExpense">0</span></strong>
+            </div>
+            <div class="summary-item">
+                <span>Yesterday :</span>
+                <strong>₹<span id="yesterdayExpense">0</span></strong>
+            </div>
+        </div>
+
+        <!-- Chart -->
+        <div class="card chart-card">
+            <h3>Category Insights (Spending by Category)</h3>
+            <div class="chart" id="chart"></div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

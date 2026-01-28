@@ -14,8 +14,6 @@ The **Advanced Expense Tracker with Category Insights** helps users:
 - Analyze category-wise expense distribution
 - Persist data using browser `localStorage`
 
-This project focuses on **DOM manipulation, state management, data aggregation, and basic data visualization**, making it ideal for interns and beginners.
-
 ---
 
 ## ✨ Features
@@ -32,8 +30,6 @@ This project focuses on **DOM manipulation, state management, data aggregation, 
 - 📊 Category-wise bar chart (pure CSS & JS)
 - 📅 Today vs Yesterday expense comparison
 - 💾 Persistent data using `localStorage`
-- ✅ Input validation for all fields
-- 📱 Responsive and clean UI
 
 ---
 
@@ -42,7 +38,6 @@ This project focuses on **DOM manipulation, state management, data aggregation, 
 - **HTML5** – Structure
 - **CSS3** – Styling & responsive layout
 - **JavaScript (Vanilla)** – Logic & DOM manipulation
-- **LocalStorage API** – Data persistence
 
 ---
 
